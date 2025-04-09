@@ -5,7 +5,11 @@ import icon from "astro-icon";
 
 import mdx from "@astrojs/mdx";
 
+import image from "@astrojs/image";
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [icon(), mdx()]
+  integrations: [icon(), image({
+    serviceEntryPoint: '@astrojs/image/sharp',
+  })]
 });
