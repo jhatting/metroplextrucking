@@ -1,6 +1,6 @@
 ---
-// library imports
-import { Icon } from "astro-icon";
+// imports
+import Icon from 'astro-iconify';
 
 interface Props {
   text: string;
@@ -26,7 +26,6 @@ const {
   ...rest
 } = Astro.props as Props;
 ---
-
 <a
   href={href}
   class:list={[
@@ -37,17 +36,11 @@ const {
   ]}
   {...rest}
 >
-  {
-    icon && icon.side === "left" && (
-      <Icon name={icon.name} height="24" width="24" />
-    )
-  }
-
+  {icon?.side === "left" && (
+    <Icon name={icon.name} height="24" width="24" class="icon-left mr-2" />
+  )}
   <span>{text}</span>
-
-  {
-    icon && icon.side === "right" && (
-      <Icon name={icon.name} height="24" width="24" />
-    )
-  }
+  {icon?.side === "right" && (
+    <Icon name={icon.name} height="24" width="24" class="icon-right ml-2" />
+  )}
 </a>

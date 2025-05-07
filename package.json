@@ -14,10 +14,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.18.0",
     "@astrojs/mdx": "^4.2.3",
+    "@astrojs/react": "^4.2.7",
+    "@astrojs/tailwind": "^6.0.2",
+    "@iconify/iconify": "^3.1.1",
     "astro": "^5.7.11",
     "astro-icon": "^1.1.5",
+    "astro-iconify": "^1.2.0",
+    "iconify": "github:iconify/iconify",
     "iconify-icon": "^2.3.0",
     "node-tls": "^0.10.2",
     "postcss": "^8.4.19",
@@ -25,6 +29,8 @@
     "sharp": "^0.34.1"
   },
   "devDependencies": {
+    "@iconify-json/cuida": "^1.2.2",
     "@iconify-json/tabler": "^1.2.17"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
